@@ -8,16 +8,15 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-        int[] array = new int[1000000];
+        int[] array = new int[10000];
         for(int i=0; i< array.length; i++){
-            array[i] = i;
+            array[i] = (int) (Math.random() * 10000);
         }
-        Arrays.sort(array);
-        for(int i=0; i< array.length; i++){
-            System.out.println(array[i]);
-        }
-        int key = BinarySearch.binarySearch(array,851 , 0, array.length);
-        System.out.println("Количество итераций " + BinarySearch.iter + " Найден элемент=" +  key);
 
+        array = BinarySearch.sort(array);
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
+
+        }
     }
 }

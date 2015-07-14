@@ -38,12 +38,22 @@ public class BinarySearch {
             }
 
         }
-
-
-
-
     }
 
+    public static int[] sort(int[] array) {
+        for(int i = 1; i< array.length; i++){
+            int j = 0;
+            while(j <= array.length - 1){
+                if(array[j] < array[i]) {
+                    int temp = array[j];
+                    array[j] = array[i];
+                    array[i] = temp;
+                }
+                j++;
+            }
+        }
+        return array;
+    }
 }
 
 
