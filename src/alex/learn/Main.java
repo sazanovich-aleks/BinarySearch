@@ -1,29 +1,23 @@
 package alex.learn;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Created by alex on 24.06.15.
  */
 public class Main {
 
-    public static void printArray(int [] array, int size) {
-        for (int i=0;i<size;i++) {
+    public static void main(String[] args) {
+        int[] array = new int[1000000];
+        for(int i=0; i< array.length; i++){
+            array[i] = i;
+        }
+        Arrays.sort(array);
+        for(int i=0; i< array.length; i++){
             System.out.println(array[i]);
         }
-    }
-
-    public static void main(String[] args) {
-        int [] arr = new int[100];
-
-        for(int i = 0; i< 100; i++){
-            arr[i] = (int) (Math.random() * 100);
-        }
-        Arrays.sort(arr);
-        System.out.println(arr);
-        Main.printArray(arr,100);
+        int key = BinarySearch.binarySearch(array,851 , 0, array.length);
+        System.out.println("Количество итераций " + BinarySearch.iter + " Найден элемент=" +  key);
 
     }
 }
