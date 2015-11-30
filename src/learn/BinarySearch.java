@@ -1,10 +1,10 @@
-package alex.learn;
-
-import java.util.*;
+package learn;
 
 /**
  * Created by alex on 24.06.15.
  */
+
+
 public class BinarySearch {
 
     public static int iter;
@@ -54,6 +54,13 @@ public class BinarySearch {
         }
         return array;
     }
+
+    /**
+     * Created by alex on 24.06.15.
+     */
+
+
+
 }
 
 

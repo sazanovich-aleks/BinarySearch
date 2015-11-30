@@ -1,9 +1,7 @@
-package alex.learn;
-
-import java.util.*;
+package learn;
 
 /**
- * Created by alex on 24.06.15.
+ * Created by alex on 29.11.15.
  */
 public class Main {
 
@@ -15,6 +13,7 @@ public class Main {
 
         array = BinarySearch.sort(array);
         for (int i = 0; i < array.length; i++) {
+
             System.out.println(array[i]);
 
         }
